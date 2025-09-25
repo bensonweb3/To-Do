@@ -66,9 +66,9 @@ Run the deployment:
 npx hardhat run scripts/deploy.js --network coretestnet
 ```
 
-You’ll get an output:
+
 ```
-Todo contract deployed to: 0x123...abc
+Todo deployed to: 0xfCFbe61aA22085e0db58a2c95cbF7FcC575Fe690
 ```
 
 Copy this contract address.
