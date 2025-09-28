@@ -1,113 +1,101 @@
-# 📝 Todo DApp
+# Todo DApp
 
-A simple decentralized **Todo List application** built with **Solidity, Hardhat, React (Vite), TailwindCSS, and Ethers.js**.  
-Users can add tasks, mark them as completed, and view their todos directly on the blockchain.
+A full-stack decentralized Todo application built with Solidity, Hardhat, React, and TailwindCSS.  
+This project allows users to add, view, and manage tasks directly on the blockchain.
 
 ---
 
-## ⚡ Tech Stack
-- **Solidity** – Smart contract for storing todos  
-- **Hardhat** – Development framework for Ethereum  
-- **React (Vite)** – Frontend framework  
-- **TailwindCSS** – Styling  
-- **Ethers.js** – Interacting with the smart contract  
-- **MetaMask** – Wallet connection  
+## 🚀 Features
+- Add tasks to the blockchain
+- View all tasks stored in the contract
+- Mark tasks as completed
+- Professional React + Tailwind frontend
+- Fully decentralized with Ethereum-compatible smart contracts
+
+---
+
+## 📜 Smart Contract
+The smart contract is written in Solidity and deployed on **Core DAO Testnet**.
+
+### Contract Address
+```
+0xfCFbe61aA22085e0db58a2c95cbF7FcC575Fe690
+```
+
+---
+
+## 🛠️ Tech Stack
+- **Smart Contracts**: Solidity, Hardhat
+- **Frontend**: React (Vite) + Tailwind CSS
+- **Blockchain Interaction**: Ethers.js v6
+- **Wallet**: MetaMask
 
 ---
 
 ## 📂 Project Structure
 ```
-TodoDapp/
-├── contracts/
-│   └── Todo.sol                # Solidity smart contract
-├── scripts/
-│   └── deploy.js               # Hardhat deployment script
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx             # Main React app
-│   │   ├── abis/Todo.json      # ABI file (copied after compilation)
-│   │   └── index.css           # TailwindCSS styles
-│   ├── index.html
-│   └── package.json
-├── hardhat.config.js
-└── README.md
+/contracts        # Solidity smart contracts
+/scripts          # Deployment scripts
+/artifacts        # Compiled contract artifacts (ABI & bytecode)
+/to-do/src        # React frontend source code
 ```
 
 ---
 
-## 🚀 Setup Instructions
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/Usernyagah/todo-dapp.git
-cd todo-dapp
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/todo-dapp.git
+   cd todo-dapp
+   ```
 
-### 2️⃣ Install dependencies
-```bash
-npm install
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### 3️⃣ Compile contracts
-```bash
-npx hardhat compile
-```
+3. Compile the smart contract:
+   ```bash
+   npx hardhat compile
+   ```
 
-### 4️⃣ Deploy contract to Core Testnet
-Update your `.env` with your **private key** and **Core Testnet RPC URL**:
+4. Deploy the contract (make sure your `.env` has your private key & RPC URL):
+   ```bash
+   npx hardhat run scripts/deploy.js --network coretestnet
+   ```
 
-```env
-PRIVATE_KEY=your_wallet_private_key
-CORE_RPC=https://rpc.test.btcs.network
-```
-
-Run the deployment:
-```bash
-npx hardhat run scripts/deploy.js --network coretestnet
-```
-
-
-```
-Todo deployed to: 0xfCFbe61aA22085e0db58a2c95cbF7FcC575Fe690
-```
-
-Copy this contract address.
+5. Start the frontend:
+   ```bash
+   cd to-do
+   npm install
+   npm run dev
+   ```
 
 ---
 
-## 🎨 Frontend Setup
+## 🖼️ Screenshots
 
-### 5️⃣ Move to frontend folder
-```bash
-cd frontend
-npm install
-```
+### Dashboard  
+![Dashboard Screenshot](to-do/src/assets/screenshot-2025-09-28-16-28-09.png)
 
-### 6️⃣ Update contract address
-Open `src/App.jsx` and replace:
-```javascript
-const CONTRACT_ADDRESS = "YOUR_DEPLOYED_CONTRACT_ADDRESS";
-```
 
-with your deployed contract address.
-
-### 7️⃣ Start frontend
-```bash
-npm run dev
-```
-
-Visit **http://localhost:5173** 🎉
 
 ---
 
-## 🛠️ Features
-- ✅ Add new tasks  
-- ✅ View all tasks  
-- ✅ Mark tasks as completed  
-- ✅ Blockchain-powered persistence  
+## 📌 Notes
+- Ensure MetaMask is connected to **Core DAO Testnet**.
+- Replace placeholder screenshots with actual project images.
+- The deployed address above is live and ready to interact with.
+
+---
+
+## 🤝 Contributing
+Pull requests are welcome. For significant changes, please open an issue first to discuss what you’d like to change.
 
 ---
 
 ## 📜 License
-MIT License  
+This project is licensed under the MIT License.
+
 
