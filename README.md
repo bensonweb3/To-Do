@@ -46,8 +46,8 @@ The smart contract is written in Solidity and deployed on **Core DAO Testnet**.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/todo-dapp.git
-   cd todo-dapp
+   git clone https://github.com/bensonweb3/To-Do.git
+   cd To-Do
    ```
 
 2. Install dependencies:
